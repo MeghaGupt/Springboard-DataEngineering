@@ -346,13 +346,12 @@ class OnlineBanking():
         stmt = stmt.values(password = new_password)
         connection.execute(stmt)
 
-Sam  = Customer(456, 'Paul', 'Las', '234-12', 'holly street' ,'paul@h.com', 1100 )
-Sam.update_personal_info('Paula', 'Las', '234-12', 'holly street' ,'paul@h.com', 1100)
+#Sam  = Customer(456, 'Paul', 'Las', '234-12', 'holly street' ,'paul@h.com', 1100 )
+#Sam.update_personal_info('Paula', 'Las', '234-12', 'holly street' ,'paul@h.com', 1100)
 #print(Sam.first_name)
 
 #Sam.raise_salary(456, 2000)
 
-#ln  = Loan(456, 123, 1000, .02, 2)
-#print(Sam.compute_interest(4))
-
+ln  = Loan(456, 123, 1000, .02, 2)
+print(ln.compute_interest())
 
